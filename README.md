@@ -10,4 +10,4 @@ To run the code locally, you will need at least version 8 of `gcc` on your machi
 
  1. Clone this repository and navigate to the directory it is in.
  2. Run `./compile.sh`. If you get permission-related errors, run `chmod u+x compile.sh` first and then run `./compile.sh`. This should produce an executable `countNgrams`.
- 3. Run this executable as: `./countNgrams <relative-path-to-directory-of-txt-files> -t=<number-of-worker-threads> -n=<size-of-ngram>`
+ 3. Run this executable as: `./countNgrams <relative-path-to-directory-of-txt-files> -t=<number-of-worker-threads> -n=<size-of-ngram>`. For example, if the directory you wanted was in this same folder, you wanted 5 worker threads to spawn and process their share of the files, and you wanted to count for sequences of 3 words, you would run `./countNgrams ./papers -t=5 -n=3`
